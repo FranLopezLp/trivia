@@ -1,0 +1,81 @@
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0rem;
+  text-align: center;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d3d3d3;
+  color: black; 
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.answer-button:hover {
+  background-color: #c0c0c0;
+}
+
+.correct {
+  border-color: green;
+  background-color: #d4f8d4;
+}
+
+.wrong {
+  border-color: red;
+  background-color: #f8d4d4;
+}
+
+.disabled {
+  background-color: #e0e0e0;
+  color: gray;
+  cursor: not-allowed;
+}
